@@ -29,9 +29,10 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'])
 
-runtimeOnly 'org.jetbrains.kotlin:kotlin-compiler:1.5.30-M1'
+implementation 'org.apache.maven:maven-core:3.8.1'
 
-implementation 'commons-io:commons-io:2.11.0'
+compileOnly 'org.apache.maven.plugin-tools:maven-plugin-annotations:3.6.1'
+
 
 
 }
